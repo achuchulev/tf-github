@@ -84,6 +84,12 @@ terraform destroy
 eval "$(rbenv init -)"
 true
 export PATH="$HOME/.rbenv/bin:$PATH"
+
+```
+* run
+
+```
+
 source ~/.bash_profile
 
 ```
