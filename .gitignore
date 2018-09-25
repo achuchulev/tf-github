@@ -5,5 +5,4 @@ terraform.tfstate*
 .kitchen/
 .ruby-version
 Gemfile.lock
-
 .kitchen.local.yml
