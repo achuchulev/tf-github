@@ -1,4 +1,4 @@
-# Sample repo with example of github provider usage in terraform and test with kitchen-terraform in travis
+# Sample repo with example of github provider usage in terraform and test with kitchen-terraform
 
 ### Prerequisits
 
