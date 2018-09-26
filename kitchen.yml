@@ -12,11 +12,9 @@ platforms:
 
 verifier:
   name: terraform
-  reporter: doc
-  groups:
-    - name: default
-      controls:
-        - check_website
+  systems:
+    - name: a system
+      backend: local
 
 suites:
   - name: default
