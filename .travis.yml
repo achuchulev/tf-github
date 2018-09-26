@@ -20,9 +20,9 @@ install:
 script:
 - terraform fmt
 - terraform init
-- bundle exec kitchen converge
-- bundle exec kitchen verify
-- bundle exec kitchen destroy
+- kitchen converge
+- kitchen verify
+- kitchen destroy
 env:
   global:
     secure: iBxXXQtgb3BjNVuG60YzCdrRUydDq01oyvqY9S/oQ1WHR7iG6rSuzEYM65iG8L12BS+MptZ3/wTrrKpxzgyTIsPRUH/hGdHXASDV8MpZssXEj2uyfv56be7wrkfYcjc/7z3D56IVQSSg/pxU5I3OqV99JFSrs0RaBlQ4YZ55PMtStqoXau4YPpoe03yQRz7QAEFjSgYUQnKp01mgwnSYe2RLIF4kQN7o0Aa7mXcHiAa7AIiT4ZQ9jODme/Q40kjetg3fiIw3u4XOaevHd1jBCtdFm4/mdginCUz1u8tK2pxf9fZOWexBMHVfRiyHeGs6GF+ZXAcEkQn1fxtOybxIMv+74/iZfnSpVUDQGmr7z6IfW0i1kUviwRAYqZAxcX71A4txUWB6O4/XGMKZX2UjZ4oKu7HUDAewSrBdTzidyC5JbGZmKbCfLfHsvfTfqjSeve29ENwpgJqVH416ugKGwWifQrr/3I23Jalyq33gLlxUPXKxWov4MWGO8bP4S4SmGy0IFJ1PanKOPwf40RDWS9sc4EI8pX/9I+ExX3z/a7qsA9/NHf2VzmeTYchr+C1uI2Ko6MrwE+cW3HyWW/yx7j+iQ1cUKZCp4aGoVnpHKuSh4tGBPdtT7+AHsa6Zw3uWF9I3PmRQ3EpzNPJ+ECbmsDNAvAluw6+ENP60r8tOibw=
