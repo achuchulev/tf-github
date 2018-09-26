@@ -15,7 +15,9 @@ install:
 - gem install inspec
 - sudo curl -sL -o /tmp/terraform.zip https://releases.hashicorp.com/terraform/0.11.7/terraform_0.11.7_linux_amd64.zip
 - sudo unzip -d /usr/local/bin /tmp/terraform.zip
-- sudo gem install bundler
+- rbenv install 2.3.1
+- rbenv local 2.3.1
+- gem install bundler
 - bundle install
 script:
 - terraform fmt
