@@ -17,6 +17,7 @@ install:
 - sudo unzip -d /usr/local/bin /tmp/terraform.zip
 - gem install bundler
 - bundle install
+- ruby -v
 script:
 - terraform fmt
 - terraform init
