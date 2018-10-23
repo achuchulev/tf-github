@@ -19,15 +19,17 @@ cd tf-github/
 #### [Create new GitHub token](https://github.com/settings/tokens) 
 
 
-#### Add token variable in env/gh.env and export it
+#### Add token variable in env/gh.env
 
-```
-TF_VAR_github_token=your_token
+`TF_VAR_github_token=your_token`
 
-export TF_VAR_github_token
+#### Export env var
 
-. env/gh.env
-```
+`export TF_VAR_github_token`
+
+#### Reload env vars
+
+`. env/gh.env`
 
 #### Download all required *plugins*
 
