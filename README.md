@@ -43,7 +43,7 @@ export TF_VAR_github_token
 
 ## Run test
 
-### For MAC
+### on MAC
 
 #### Install rbenv to use ruby version 2.3.1
 
@@ -63,7 +63,9 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 
 ```
 
-#### Reload profile: `source ~/.bash_profile`
+#### Reload profile: 
+
+`source ~/.bash_profile`
 
 #### Install bundler
 
@@ -72,4 +74,6 @@ gem install bundler
 bundle install
 ```
 
-#### Run the test: `bundle exec kitchen test`
+#### Run the test: 
+
+`bundle exec kitchen test`
