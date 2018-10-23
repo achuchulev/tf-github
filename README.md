@@ -1,101 +1,70 @@
-# Sample repo with example of github provider usage in terraform and test with kitchen-terraform
+# Create GitHub repo with Terraform and test that it exists with kitchen-terraform
 
-### Prerequisits
+### Prerequisites
 
 * terraform
 * kitchen
 * travis
 
-### Run
+## Create repo
 
-* clone repo 
+Clone repo and go to the repo directory
 
 ```
-
 git clone git@github.com:achuchulev/tf-github.git
-
-```
-
-* go to repo folder
-
-```
-
 cd tf-github/
-
 ```
 
-* [Create new GitHub token](https://github.com/settings/tokens) 
+[Create new GitHub token](https://github.com/settings/tokens) 
 
-* Add token variable in env/gh.env  
+Add token variable in env/gh.env and export it
 
 ```
 TF_VAR_github_token=your_token
 export TF_VAR_github_token
-
-```
-
-* export variable 
-
-```
-
 . env/gh.env
-
 ```
 
-* Download required *plugins*
+* Download all required *plugins*
 
-```
-
-terraform init
-
-```
+`terraform init`
 
 * Create resources
 
-```
-
-terraform apply
-
-```
+`terraform apply`
 
 * Destroy resources
 
+`terraform destroy`
+
+## Run test
 
 ```
-
-terraform destroy
-
+brew install rbenv
+rbenv install 2.3.1
+rbenv local 2.3.1
+rbenv versions
 ```
 
-### Test
-
-* brew install rbenv
-
-* rbenv install 2.3.1
-
-* rbenv local 2.3.1
-
-* rbenv versions
-
-* add the following to your ~/.bash_profile:
+add the following to your ~/.bash_profile:
 
 ```
-
 eval "$(rbenv init -)"
 true
 export PATH="$HOME/.rbenv/bin:$PATH"
-
-```
-* run
-
 ```
 
-source ~/.bash_profile
+run `source ~/.bash_profile` to reload profile
+
+### For MAC
+
+install:
 
 ```
+gem install bundler
+bundle install
+```
 
-* gem install bundler
+run test:
 
-* bundle install
-
-* bundle exec kitchen test
+`bundle exec kitchen test`
