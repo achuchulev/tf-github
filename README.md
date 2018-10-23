@@ -8,42 +8,44 @@
 
 ## Create GitHub repo
 
-### Clone repo and go to the repo directory
+#### Clone repo and go to the repo directory
 
 ```
 git clone git@github.com:achuchulev/tf-github.git
 
 cd tf-github/
-
 ```
 
-### [Create new GitHub token](https://github.com/settings/tokens) 
+#### [Create new GitHub token](https://github.com/settings/tokens) 
 
-### Add token variable in env/gh.env and export it
+
+#### Add token variable in env/gh.env and export it
 
 ```
-
 TF_VAR_github_token=your_token
 
 export TF_VAR_github_token
 
 . env/gh.env
-
 ```
 
-### Download all required *plugins*
+#### Download all required *plugins*
 
 `terraform init`
 
-### Create resources
+#### Create resources
 
 `terraform apply`
 
-### Destroy resources
+#### Destroy resources
 
 `terraform destroy`
 
 ## Run test
+
+### For MAC
+
+#### Install rbenv to use ruby version 2.3.1
 
 ```
 brew install rbenv
@@ -52,25 +54,22 @@ rbenv local 2.3.1
 rbenv versions
 ```
 
-add the following lines to your ~/.bash_profile:
+#### Add the following lines to your ~/.bash_profile:
 
 ```
 eval "$(rbenv init -)"
 true
 export PATH="$HOME/.rbenv/bin:$PATH"
+
 ```
 
-run `source ~/.bash_profile` to reload profile
+#### Reload profile: `source ~/.bash_profile`
 
-### For MAC
-
-install:
+#### Install bundler
 
 ```
 gem install bundler
 bundle install
 ```
 
-run test:
-
-`bundle exec kitchen test`
+#### Run the test: `bundle exec kitchen test`
