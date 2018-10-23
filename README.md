@@ -45,9 +45,17 @@ cd tf-github/
 
 ## Run test
 
+### on Linux
+
+#### Run the test
+
+`sudo kitchen test`
+
 ### on MAC
 
-#### Install rbenv to use ruby version 2.3.1
+#### Prerequisites
+
+##### Install rbenv to use ruby version 2.3.1
 
 ```
 brew install rbenv
@@ -56,7 +64,7 @@ rbenv local 2.3.1
 rbenv versions
 ```
 
-#### Add the following lines to your ~/.bash_profile:
+##### Add the following lines to your ~/.bash_profile:
 
 ```
 eval "$(rbenv init -)"
@@ -65,17 +73,17 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 
 ```
 
-#### Reload profile: 
+##### Reload profile: 
 
 `source ~/.bash_profile`
 
-#### Install bundler
+##### Install bundler
 
 ```
 gem install bundler
 bundle install
 ```
 
-#### Run the test: 
+#### Run the test
 
 `bundle exec kitchen test`
