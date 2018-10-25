@@ -47,6 +47,16 @@ cd tf-github/
 
 ### on Linux
 
+#### Prerequisites
+
+Install ruby gems
+
+```
+sudo gem install test-kitchen
+sudo gem install kitchen-terraform
+sudo gem install kitchen-inspec
+```
+
 #### Run the test
 
 `sudo kitchen test`
